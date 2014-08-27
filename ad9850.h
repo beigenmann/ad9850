@@ -1,5 +1,5 @@
-#ifndef __CHAR_DEVICE_H__
-#define __CHAR_DEVICE_H__
+#ifndef __AD9850_H__
+#define __AD9850_H__
 
 #define MAJOR_DEVICE_NUM 30
 #define MAX_MINOR_NUM   2
@@ -13,10 +13,12 @@
 
 #define HIGH 1
 #define LOW 0
-struct mem_dev {
-    char *data;
-    unsigned long size;
-};
+
+// Store and Show functions.....
+static ssize_t set_frequence(struct class *cls, struct class_attribute *attr,
+		const char *buf, size_t count);
+static ssize_t get_frequence(struct class *cls, struct class_attribute *attr,
+		char *buf);
 int send_bits(char data);
 int spread(unsigned int freq);
 int dds_frequency(unsigned int freq, unsigned char phase);

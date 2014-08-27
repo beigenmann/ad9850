@@ -21,11 +21,7 @@ MODULE_AUTHOR("Benno Eigenmann");
 MODULE_DESCRIPTION("AD9859 Driver for Raspberry Pi");
 
 
-// Store and Show functions.....
-static ssize_t set_frequence(struct class *cls, struct class_attribute *attr,
-		const char *buf, size_t count);
-static ssize_t get_frequence(struct class *cls, struct class_attribute *attr,
-		char *buf);
+
 static dev_t first; // Global variable for the first device number
 static struct cdev c_dev; // Global variable for the character device structure
 static struct class *cl; // Global variable for the device class
