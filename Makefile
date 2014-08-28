@@ -12,7 +12,8 @@ ad9859.ko:${OBJS}
 
 modules_install:
 	$(MAKE)  -C $(KERNELDIR) M=$(PWD) INSTALL_MOD_PATH=$(sysr) INSTALL_MOD_DIR=$(mdir) modules_install
-	
+
+install:modules_install	
 
 clean:
 	$(MAKE)  -C $(KERNELDIR) M=$(PWD) clean
