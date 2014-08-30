@@ -1,11 +1,6 @@
-#ifndef __AD9850_H__
-#define __AD9850_H__
+#ifndef __HC_SC04_H__
+#define __HC_SC04_H__
 
-#define MAJOR_DEVICE_NUM 30
-#define MAX_MINOR_NUM   2
-
-#define MEMDEV_NUM 2
-#define MEMDEV_SIZE 4096
 #define W_CLK 11
 #define FU_UD 25
 #define DATA 9
