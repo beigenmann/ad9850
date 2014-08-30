@@ -1,5 +1,5 @@
-#ifndef __HC_SC04_H__
-#define __HC_SC04_H__
+#ifndef __AD9850_H__
+#define __AD9850_H__
 
 #define W_CLK 11
 #define FU_UD 25

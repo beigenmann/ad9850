@@ -11,9 +11,6 @@
 #include <linux/delay.h>
 #include "ad9850.h"
 
-#define MAJOR_NUM 200
-#define DEVICE_NAME "c"
-
 
 
 MODULE_LICENSE("GPL");
